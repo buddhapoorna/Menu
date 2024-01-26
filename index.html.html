@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+img {
+  border-radius: 50%;
+}
+tr, th,td{
+  border: 500px solid black;
+  border-collapse: collapse;
+
+  border:1px solid black;
+  background-color:white;
+
+  border-style: solid;
+ 
+}
+h1 {
+  border-left-style: solid;
+  border-left-color: black;
+  font-family: Cursive;
+}
+</style>
+</head>
+<body>
+  
+   
+    <video autoplay muted loop id="myVideo">
+        <source src="Wel.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <img src="chilll.jpg" width="150" height="150"></br>
+    <p>&nbsp&nbsp&nbsp&nbsp<button onclick="showMenu()" class="w3-button w3-black">MENU</button></p>
+   <!-- <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>-->
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
+    <p class="w3-large">view college, beside view mechanical lab, Kapujagarajupeta, 
+      Duvadda</br>VIEW CSE-A TEAM-1 students</p>
+   
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal" onclick="closeMenu()">
+  <div class="w3-modal-content w3-animate-zoom">
+   
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+      <div class="w3-content">
+       
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px; font: Fantasy;"><strong>THE MENU</strong></h1></th>
+        <!-- Add buttons to trigger the events -->
+        <table style="width:100%">
+          <tr>
+            <th><button onclick="showMenuItems('menu1')"> <strong> NON VEG MANDIS </strong>  </button></th>
+            <th><button onclick="showMenuItems('menu2')"> <strong>  VEG MANDIS </strong></button></th>
+            <th><button onclick="showMenuItems('menu3')"><strong>  NON VEG  BIRIYANI </strong> </button></th>
+            </tr>
+          <tr>
+            <th><button onclick="showMenuItems('menu4')"><strong>  VEG BIRYANIS </strong> </button></th>
+            <th><button onclick="showMenuItems('menu5')"><strong>  NON VEG STATERS  </strong> </button></th>
+            <th><button onclick="showMenuItems('menu6')"><strong>  VEG STATERS </strong> </button></th>
+            </tr>
+          <tr>
+            <th><button onclick="showMenuItems('menu7')"><strong>  NON VEG CURRIES </strong>  </button></th>
+            <th><button onclick="showMenuItems('menu8')"> <strong>  VEG CURRYS </strong>  </button></th>
+            <th><button onclick="showMenuItems('menu9')"><strong>  ROTI ITEMS </strong> </button></th>
+            </tr>
+          <tr>
+            <th><button onclick="showMenuItems('menu10')"><strong>  PIZZA </strong> </button></th>
+            <th><button onclick="showMenuItems('menu11')"><strong>  SANDWICH </strong>  </button></th>
+            <th><button onclick="showMenuItems('menu12')"><strong>  SIZLAR </strong> </button></th>
+            </tr>
+          <tr>
+            <th><button onclick="showMenuItems('menu13')"><strong>  PASTA </strong> </button></th>
+            <th><button onclick="showMenuItems('menu14')"><strong>  MOCK TAILS </strong> </button></th>
+            </tr>
+
+</table>
+</hr>
+</hr>
+ITEMS
+</hr>
+</hr>
+  <div class="menu-items" id="menu1">
+  <h2><strong> NON VEG MANDIS </strong> </h2>
+  <ul>
+ <li> chicken faham mandi (single)- 200</li>
+  <li>chicken faham mandi(2p)-330</li>
+    <li>chicken faham mandi(3p)-450</li>
+      <li>chicken faham mandi(4p)-600</li>
+        <li>Chicken fry Mandi (single)-220</li>
+          <li>Chicken fry Mandi(2p)-370</li>
+            <li>Chicken fry Mandi(3p)- 490</li>
+              <li>Chicken fry Mandi(4p)-650</li>
+                <li>Chicken boneless mandi(single)-230</li>
+                  <li>Chicken boneless mandi(2p)-370</li>
+                    <li>Chicken boneless mandi(3p)-520</li>
+                      <li>Chicken boneless mandi(4p)-700</li>
+                        <li>Mutton roast Mandi (single)-330</li>
+                          <li>Mutton roast Mandi (2p)-550</li>
+                            <li>Mutton roast Mandi (3p)-770</li>
+                              <li>Mutton roast Mandi (4p)-990</li>
+                                <li>Mutton juice Mandi (single)-340</li>
+                                  <li>Mutton juice Mandi (2p)-560</li>
+                                    <li>Mutton juice Mandi (3p)-780</li>
+                                      <li>Mutton juice Mandi (4p)-1000</li>
+                                        <li>Fish boneless mandi (single)-290</li>
+                                          <li>Fish boneless mandi(2p)-430</li>
+                                            <li>Fish boneless mandi(3p)-570</li>
+
+                                              <li>Fish boneless mandi(4p)-70</li>
+                                                <li>Fish roast Mandi (single)-280</li>
+                                                  <li>Fish roast Mandi(2p)-420</li>
+                                                    <li>Fish roast Mandi(3p)-560</li>
+                                                      <li>Fish roast Mandi(4p)-700</li>
+                                                        <li>CHICKEN TIKKA MANDI(SINGLE)-250</li>
+                                                          <li>CHICKEN TIKKA MANDI (2P)-460</li>
+                                                            <li>TANGDI KABAB MANDI (SINGLE)-250</li>
+                                                              <li>TANGDI KABAB MANDI (2P)-460</li>
+                                                                <li>ALL MIXED MANDI (2P)- 700</li>
+                                                                  <li>ALL MIXED MANDI (4P)-1399</li>
+                                                                </ul>
+    <!-- Add more menu items for Menu 1 as needed -->
+  
+</div>
+
+<div class="menu-items" id="menu2">
+  <h2>
+    <strong>  VEG MANDIS </strong> 
+  </h2>
+  <ul>
+ <li> Veg Mandi (single) -200</li>
+  <li> Veg Mandi (2p)-380</li>
+    <li> Veg Mandi (3p)-560</li>
+      <li> Veg Mandi (4p)-740</li>
+    </ul>
+</div>
+
+<div class="menu-items" id="menu3">
+  <h2><strong>  NON VEG  biryani </strong> </h2>
+  <ul>
+    <li>  Chicken Dum Biryani (SINGLE )- 180</li>
+    <li> Dum Biryani(full)- 310</li>
+      <li>Chicken Dum Biryani(hundy)- 440</li>
+        <li>Chicken Dum Biryani(family)-560</li>
+          <li>Chicken Dum Biryani( jumbo) -680</li>
+     
+            <li>Chicken Fry biryani ( single) - 210</li>
+              <li>Chicken Fry biryani(full)-400</li>
+                <li>Chicken Fry biryani( family)- 700</li>
+                  <li>Chicken boneless biryani(single)-230</li>
+                    <li>Chicken boneless biryani (full)- 440</li>
+                      <li>Chicken boneless biryani (family) -840</li>
+                        <li>Chicken Lollypop biryani - 220</li>
+                          <li>Chicken tikka biryani - 240</li>
+                            <li>Chicken 65 biryani - 240</li>
+                              <li>Red chilli special biryani - 300</li>
+                                <li>Chicken wings biryani -230</li>
+                                  <li>Chicken moglai biryani -240</li>
+                                    <li>Mutton Biryani -340</li>
+                                      <li>Fish biryani -280</li>
+                                        <li>Prawns biryani -280</li>
+                                          <li>Extra biryani rice - 100</li>
+                                            <li>Extra bum piece -70</li>
+    
+  </ul>
+</div>
+
+<div class="menu-items" id="menu4">
+  <h2>
+    <strong>  VEG BIRYANIS </strong> 
+  </h2>
+  <ul>
+   <li> kaju biryani -200</li>
+    <li>  Paneer biryani -200</li>
+      <li> Mushroom biryani -200</li>
+        <li> Mix veg biryani -180</li>
+          <li> Egg biryani -150</li>
+    
+    </ul>
+</div>
+
+<div class="menu-items" id="menu5">
+  <h2>
+    <strong>   NON VEG STATERS  </strong> 
+  </h2>
+  <ul>
+    <li>chilli chicken -200</li>
+      <li> Chicken 65    -200</li>
+        <li> Chicken 555.  -200</li>
+          <li>Chicken Manchurian - 200</li>
+            <li>Chicken fried wings -220</li>
+              <li>Pepper chicken -220</li>
+                <li>Chicken lollypop -200</li>
+                  <li>Chicken drumsticks -200</li>
+                    <li>Red chilli special -250</li>
+                      <li>Crispy chicken -220</li>
+                        <li>Fried chicken -220</li>
+                          <li>Chicken sticks -240</li>
+                            <li>Apollo fish -280</li>
+                              <li>Finger fish -260</li>
+                                <li>Fry fish -220</li>
+                                  <li>Corn fish- 240</li>
+                                    
+                                    <li>Pucket fish -240</li>
+                                      <li>Prawns fry -270</li>
+                                        <li>Phadai prawns -270</li>
+                                          <li>Loose prawns – 280</li>
+    
+    
+    </ul>
+</div>
+
+
+<div class="menu-items" id="menu6">
+  <h2>
+    <strong>   VEG STATERS </strong> 
+  </h2>
+  <ul>
+   <li>chilli babycorn -180</li>
+    <li>Babycorn 65   -190</li>
+      <li>Mushroom chilli - 180</li>
+        <li> Mushroom 65. -190</li>
+          <li>Paneer chilli -180</li>
+            <li>Paneer 65 - 190</li>
+              <li>Veg basket -200</li>
+                <li>Veg bullets -180</li>
+                  <li>Gobi chilli - 160</li>
+                    <li>Gobi 65. -170</li>
+                      <li>Gobi Manchurian -160</li>
+                        <li>Veg Manchurian -180</li>
+                          <li>Egg chilli - 170</li>
+                            <li>Egg 65. -180</li>
+                              <li>Egg Manchurian -170</li>
+                                <li>Kaju fry -240</li>
+                                  <li>Peanut masala -140</li>
+                                    <li>Boiled egg -15</li>
+    
+    
+    </ul>
+</div>
+
+<div class="menu-items" id="menu7">
+  <h2>
+    <strong>   NON VEG CURRIES </strong> 
+    
+  </h2>
+  <ul>
+    <li>butter chicken (bone)- 210</li>
+      <li> Butter chicken (boneless)-220</li>
+        <li>Chicken masala (bone)- 200</li>
+          <li>Chicken masala ( boneless)-210</li>
+            <li>Chicken curry (bone)-190</li>
+              <li>Chicken curry (boneless)-200</li>
+                <li>Moglai chicken curry (bone)-210</li>
+                  <li>Moglai chicken curry (boneless)-220</li>
+                    <li> Kadai chicken -200</li>
+                      <li>Chicken kurma-200</li>
+                        <li>MD chicken curry -210</li>
+                          <li>Red chilli special curry -250</li>
+                            <li>Chicken fry -200</li>
+                              <li>Mutton curry -300</li>
+                                <li>Mutton fry -330</li>
+    
+    </ul>
+</div>
+
+
+<div class="menu-items" id="menu8">
+  <h2>
+    <strong>  VEG CURRYS </strong> 
+  </h2>
+  <ul>
+   <li> kaju curry -200</li>
+    <li> Kaju tomato -210</li>
+      <li>Paneer butter masala -200</li>
+        <li>Kadai paneer -190</li>
+          <li>Kaju paneer -210</li>
+            <li>Mushroom curry -190</li>
+              <li>Mix veg curry -150</li>
+                <li>Palak paneer -200</li>
+                  <li>Dall fry -150</li>
+
+                    <li>Dall tadaka -160</li>
+                      <li>Tomato dall- 170</li>
+                        <li>Egg birji - 120</li>
+                          <li> Egg curry- 120</li>
+    
+    
+    </ul>
+</div>
+
+
+
+<div class="menu-items" id="menu9">
+  <h2>
+
+    <strong> ROTI ITEMS </strong> 
+  </h2>
+  <ul>
+    <li>Tandoori roti -30</li>
+      <li> Tandoori butter roti -35</li>
+        <li>Plain naan- 30</li>
+          <li>Butter naan- 35</li>
+            <li>Garlic naan- 40</li>
+              <li>Alu paratha -70</li>
+    
+    
+    </ul>
+</div>
+
+<div class="menu-items" id="menu10">
+  <h2>
+    <strong> PIZZA </strong> 
+  </h2>
+  <ul>
+ <li>  veg pizza-  130</li>
+  <li> mushroom pizza -150</li>
+    <li> Paneer pizza -150</li>
+      <li> Corn cheese pizza -130</li>
+        <li> Tomato onion pizza -110</li>
+          <li> Onion pizza - 110</li>
+            <li> Omlet pizza- 140</li>
+
+    
+    </ul>
+</div>
+
+<div class="menu-items" id="menu11">
+  <h2>
+    <strong> sandwich </strong> 
+  </h2>
+  <ul>
+    <li>Veg sandwich - 80</li>
+      <li>Sweet corn sandwich -90</li>
+        <li>Paneer sandwich -90</li>
+          <li>Mushroom sandwich -90</li>
+            <li>Babycorn sandwich -90</li>
+              <li>Chicken sandwich -100</li>
+                <li>Chicken corn sandwich -110</li>
+    
+    
+
+    
+    </ul>
+</div>
+<div class="menu-items" id="menu12">
+  <h2>
+    <strong> SIZLAR </strong> 
+  </h2>
+  <ul>
+    <li>BBQ chicken sizlar -350</li>
+      <li>Chicken sizlar -330</li>
+        <li>Paneer BBQ sizlar -330</li>
+          <li>BBQ veg sizlar -330</li>
+            <li>Mushroom sizlar -330</li>
+              <li>Fish sizlar  -380</li>
+                <li>Prawns sizlar -380BURGER </li>
+                  <li>Veg burger -80</li>
+                    <li>Chicken burger -100</li>
+    
+    </ul>
+</div>
+
+<div class="menu-items" id="menu13">
+  <h2>
+    <strong> PASTA </strong> 
+  </h2>
+  <ul>
+   <li> Peene chicken pasta -200</li>
+    <li>Makhan chicken pasta- 230</li>
+      <li>Peene veg pasta -170</li>
+        <li>Makhan veg pasta -190</li>
+
+    </ul>
+</div>
+
+<div class="menu-items" id="menu14">
+  <h2>
+  
+    <strong> MOCKTAILS </strong> 
+
+  </h2>
+  <ul>
+    <li>Blue curacao -60</li>
+      <li> mint    - 70</li>
+        <li> Green apple  -80</li>
+          <li> Mango -80</li>
+            <li> Fruit Punch  -75</li>
+              <li>Bery bery - 80</li>
+                <li>Strawberry - 80</li>
+                  <li>Vergin blue- 70</li>
+                    <li>Orange - 60</li>
+                      <li>Lemon ice tea- 60</li>
+                        <li>Mango ice tea- 60</li>
+                          <li>Peach ice tea- 60</li>
+                            <li>Strawberry ice tea- 60</li>
+                              <li>Fulzar soda - 80 </li>
+                                <li>Lime soda ( sweet or salt) -60</li>
+    
+
+    </ul>
+</div>
+<!-- JavaScript to handle the events and show the respective menu items -->
+<script>
+function showMenuItems(menuId) {
+  var allMenuItems = document.getElementsByClassName('menu-items');
+  for (var i = 0; i < allMenuItems.length; i++) {
+    var menuItems = allMenuItems[i];
+    if (menuItems.id === menuId) {
+      menuItems.style.display = "block";
+    } else {
+      menuItems.style.display = "none";
+    }
+  }
+}
+</script>
+   <script>
+function showMenu() {
+  document.getElementById('menu').style.display = 'block';
+}
+
+// Close the menu modal if clicked outside the modal content
+function closeMenu() {
+  var modal = document.getElementById('menu');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+}
+</script>
+
+</body>
+</html>
